@@ -3,16 +3,10 @@ import Homebox from "../components/homebox";
 import { Route, Link, Switch, withRouter, Redirect } from "react-router-dom";
 
 export default function Homepage(props) {
-  const handleClick = () => {
-    console.log(props);
-  };
   return (
     <>
       <img src="https://static.eppendorf.com/assets/website/images/logoEppendorf.png" />
-      <h1
-        style={{ textAlign: "center", paddingBottom: "10vh" }}
-        onClick={handleClick()}
-      >
+      <h1 style={{ textAlign: "center", paddingBottom: "10vh" }}>
         Welcome to the Eppendorf Gallery
       </h1>
 
@@ -23,14 +17,23 @@ export default function Homepage(props) {
           justifyContent: "space-around"
         }}
       >
-        <Link to="/product" style={{ textDecoration: "none", color: "black" }}>
-          <Homebox onClick={e => handleClick(e)} />
+        <Link
+          to="/product/history"
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          <Homebox />
         </Link>
-        <Link to="/product" style={{ textDecoration: "none", color: "black" }}>
-          <Homebox onClick={e => handleClick(e)} />
+        <Link
+          to="/product/history"
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          <Homebox />
         </Link>
-        <Link to="/product" style={{ textDecoration: "none", color: "black" }}>
-          <Homebox onClick={e => handleClick(e)} />
+        <Link
+          to="/product/history"
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          <Homebox />
         </Link>
       </div>
     </>

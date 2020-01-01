@@ -4,7 +4,7 @@ export default function Homebox() {
   return (
     <div
       style={{
-        height: "23vw",
+        height: "28vw",
         width: "30vw",
         display: "flex",
         alignItems: "center",
