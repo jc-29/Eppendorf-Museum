@@ -8,6 +8,7 @@ export default function Homepage(props) {
   };
   return (
     <>
+      <img src="https://static.eppendorf.com/assets/website/images/logoEppendorf.png" />
       <h1
         style={{ textAlign: "center", paddingBottom: "10vh" }}
         onClick={handleClick()}
@@ -22,13 +23,13 @@ export default function Homepage(props) {
           justifyContent: "space-around"
         }}
       >
-        <Link to="/test" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/product" style={{ textDecoration: "none", color: "black" }}>
           <Homebox onClick={e => handleClick(e)} />
         </Link>
-        <Link to="/test" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/product" style={{ textDecoration: "none", color: "black" }}>
           <Homebox onClick={e => handleClick(e)} />
         </Link>
-        <Link to="/test" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/product" style={{ textDecoration: "none", color: "black" }}>
           <Homebox onClick={e => handleClick(e)} />
         </Link>
       </div>

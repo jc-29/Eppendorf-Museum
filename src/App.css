@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+#sidebar-drawer div .makeStyles-toolbar-5 {
+  display: none;
+}
+#sidebar-drawer div .makeStyles-toolbar-145 {
+  display: none;
+}
